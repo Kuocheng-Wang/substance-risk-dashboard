@@ -313,7 +313,7 @@ def main():
     project_root = Path(__file__).resolve().parent.parent
     input_file = project_root / "data" / "processed" / "cleaned_data.csv"
     output_dir = project_root / "outputs" / "tables"
-    output_file = output_dir / "predictions_baseline.csv"
+    output_file = output_dir / "predictions_baseline_new.csv"
 
     print("Reading file:", input_file)
 
