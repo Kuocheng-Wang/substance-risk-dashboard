@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 
@@ -6,8 +7,11 @@ st.set_page_config(page_title="Substance Risk Dashboard", layout="wide")
 st.title("Substance Abuse Risk Dashboard")
 st.write("This dashboard presents risk signal detection, trend analysis, and topic discovery from anonymized social discussions.")
 
+base_path = Path(__file__).resolve().parent.parent
+csv_path = base_path / "outputs" / "tables" / "predictions_baseline.csv"
+
 try:
-    df = pd.read_csv("outputs/tables/predictions_baseline.csv")
+    df = pd.read_csv(csv_path)
     st.success("Loaded predictions_baseline.csv successfully.")
 except:
     df = pd.DataFrame({
@@ -25,7 +29,6 @@ except:
         "relapse_label": [1, 0, 0, 1, 0]
     })
     st.warning("No predictions_baseline.csv found. Showing demo data instead.")
-
 # ===== 1. Risk Distribution =====
 st.header("1. Risk Distribution")
 
