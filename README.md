@@ -14,15 +14,9 @@ This project detects substance abuse related risk signals from anonymized social
 - Topic discovery
 - Interactive dashboard
 
-## Current Progress
-- Dashboard prototype completed
-- Demo data visualization completed
-- Waiting for baseline prediction file integration
+## How to Run
+1. Install dependencies:
+   pip install -r requirements.txt
 
-## Project Structure
-- `app/`: Streamlit dashboard
-- `outputs/tables/`: prediction results
-- `data/processed/`: cleaned data
-- `src/`: preprocessing and baseline scripts
-- `report/`: final report files
-- `video/`: final video assets
+2. Run the dashboard:
+   streamlit run app/streamlit_app.py
