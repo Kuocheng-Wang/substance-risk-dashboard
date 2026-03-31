@@ -30,6 +30,10 @@ except:
     })
     st.warning("No predictions_baseline.csv found. Showing demo data instead.")
 # ===== 1. Risk Distribution =====
+col1, col2, col3 = st.columns(3)
+col1.metric("Substance Posts", int(df["substance_label"].sum()))
+col2.metric("Distress Posts", int(df["distress_label"].sum()))
+col3.metric("Relapse Posts", int(df["relapse_label"].sum()))
 st.header("1. Risk Distribution")
 
 risk_counts = pd.DataFrame({
@@ -52,12 +56,13 @@ st.line_chart(trend_df)
 
 # ===== 3. Topic Discovery =====
 st.header("3. Topic Discovery")
-st.write("Initial keywords / themes:")
-st.write("- alcohol / drinking")
-st.write("- drugs / opioids")
-st.write("- anxiety / depression")
-st.write("- relapse / craving / recovery")
+st.write("Preliminary themes identified from the dataset:")
+st.write("- Alcohol use and drinking relapse")
+st.write("- Drug use and opioid-related mentions")
+st.write("- Emotional distress such as anxiety and depression")
+st.write("- Recovery attempts, cravings, and relapse signals")
 
 # ===== 4. Example Posts =====
+st.write("Sample labeled posts:")
 st.header("4. Example Posts")
 st.dataframe(df[["post_id", "date", "text", "substance_label", "distress_label", "relapse_label"]])
