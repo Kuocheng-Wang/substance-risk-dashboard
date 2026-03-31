@@ -5,16 +5,24 @@
 Yuchen Zhang
 Kuocheng Wang
 
-## Project Goal
-This project aims to detect substance abuse risk signals from anonymized social discussions, analyze temporal trends, and present interpretable results through an interactive dashboard.
+## Objective
+This project detects substance abuse related risk signals from anonymized social discussions, analyzes temporal trends, and presents interpretable insights through an interactive dashboard.
 
-## Main Tasks
+## Main Components
 - Risk signal detection
-- Temporal trend analysis
-- Topic/keyword discovery
+- Trend analysis
+- Topic discovery
 - Interactive dashboard
 
-## Planned Output
-- GitHub repository
-- 4-page report
-- 3-minute video
+## Current Progress
+- Dashboard prototype completed
+- Demo data visualization completed
+- Waiting for baseline prediction file integration
+
+## Project Structure
+- `app/`: Streamlit dashboard
+- `outputs/tables/`: prediction results
+- `data/processed/`: cleaned data
+- `src/`: preprocessing and baseline scripts
+- `report/`: final report files
+- `video/`: final video assets
