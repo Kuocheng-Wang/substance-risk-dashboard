@@ -20,3 +20,5 @@ This project detects substance abuse related risk signals from anonymized social
 
 2. Run the dashboard:
    streamlit run app/streamlit_app.py
+
+Due to GitHub file size limits, the full predictions file is kept locally and not included in this repository. This repo provides code and a sample output file.
