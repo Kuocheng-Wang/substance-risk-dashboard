@@ -1,24 +1,40 @@
-# substance-risk-dashboard
-# Detecting Substance Abuse Risk Signals from Anonymous Social Discussions with Trend Analysis and an Explainable Dashboard
+# Substance Risk Dashboard
+
+A lightweight NLP pipeline for detecting **substance**, **distress**, and **relapse** signals from public text data, with **monthly trend analysis** and an **interactive Streamlit dashboard**.
 
 ## Team Members
-Yuchen Zhang
-Kuocheng Wang
+- Yuchen Zhang
+- Kuocheng Wang
 
-## Objective
-This project detects substance abuse related risk signals from anonymized social discussions, analyzes temporal trends, and presents interpretable insights through an interactive dashboard.
+## Overview
+This project was developed for **UMKC NSF NRT Challenge 1 (AI)**, **Track B: Data Intelligence and Decision Support**.
 
-## Main Components
-- Risk signal detection
-- Trend analysis
-- Topic discovery
-- Interactive dashboard
+The system:
+- preprocesses raw text data
+- applies rule-based baseline labeling
+- analyzes monthly risk trends
+- visualizes results in an interactive dashboard
 
-## How to Run
-1. Install dependencies:
-   pip install -r requirements.txt
+## Risk Labels
+- **Substance**: substance-use-related language in an abuse, dependency, or recovery context  
+- **Distress**: emotional or psychological distress signals  
+- **Relapse**: cravings, withdrawal, relapse, or recovery-difficulty signals  
 
-2. Run the dashboard:
-   streamlit run app/streamlit_app.py
-
-Due to GitHub file size limits, the full predictions file is kept locally and not included in this repository. This repo provides code and a sample output file.
+## Project Structure
+```text
+substance-risk-dashboard/
+├── app/
+│   └── streamlit_app.py
+├── data/
+│   ├── raw/
+│   │   └── drugsComTrain_raw.csv
+│   └── processed/
+│       └── cleaned_data.csv
+├── outputs/
+│   ├── figures/
+│   └── tables/
+│       ├── predictions_baseline.csv
+│       └── predictions_baseline_sample.csv
+└── src/
+    ├── preprocess.py
+    └── baseline.py
