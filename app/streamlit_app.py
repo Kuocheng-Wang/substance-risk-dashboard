@@ -101,13 +101,6 @@ risk_dist = pd.DataFrame({
 
 st.bar_chart(risk_dist.set_index("Risk Type")["Percentage"])
 
-st.dataframe(
-    risk_dist.style.format({
-        "Percentage": "{:.2f}%",
-        "Count": "{:,.0f}"
-    }),
-    use_container_width=True
-)
 
 # -----------------------------
 # 2. Trend Analysis (monthly)
