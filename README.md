@@ -21,6 +21,7 @@ The system:
 - **Relapse**: cravings, withdrawal, relapse, or recovery-difficulty signals
 
 ## Project Structure
+```text
 substance-risk-dashboard/
 ├── app/
 │   └── streamlit_app.py
@@ -37,30 +38,39 @@ substance-risk-dashboard/
 └── src/
     ├── preprocess.py
     └── baseline.py
+```
 
 ## How to Run
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run preprocessing:
 
+```bash
 py src/preprocess.py
+```
 
 Run baseline labeling:
 
+```bash
 py src/baseline.py
+```
 
 Launch the dashboard:
 
+```bash
 streamlit run app/streamlit_app.py
+```
 
 ## Sample Files
 This repository includes sample files for demonstration:
 
-- data/processed/cleaned_data_sample.csv
-- outputs/tables/predictions_baseline_sample.csv
+- `data/processed/cleaned_data_sample.csv`
+- `outputs/tables/predictions_baseline_sample.csv`
 
 Due to GitHub file size limits, the full dataset and full prediction files are kept locally and are not included in this repository.
 
