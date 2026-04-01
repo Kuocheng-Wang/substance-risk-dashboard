@@ -25,19 +25,18 @@ The system:
 substance-risk-dashboard/
 ├── app/
 │   └── streamlit_app.py
-├── data/
-│   ├── raw/
-│   │   └── drugsComTrain_raw.csv
-│   └── processed/
-│       └── cleaned_data.csv
-├── outputs/
-│   ├── figures/
+├──── outputs/
+│   ├── cleanned/
+│       ├── cleaned_drugsComTrain_sample.csv
+│       └── cleaned_drugsComTest_sample.csv
 │   └── tables/
 │       ├── predictions_baseline.csv
 │       └── predictions_baseline_sample.csv
 └── src/
-    ├── preprocess.py
-    └── baseline.py
+    ├── baseline_drugsComTest_raw.py
+    ├── baseline_drugsComTrain_raw.py
+    ├── preprocess_drugsComTest_raw.py
+    └── preprocess_drugsComTrain_raw.py
 ```
 
 ## How to Run
