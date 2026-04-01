@@ -68,8 +68,10 @@ streamlit run app/streamlit_app.py
 ## Sample Files
 This repository includes sample files for demonstration:
 
-- `data/processed/cleaned_data_sample.csv`
-- `outputs/tables/predictions_baseline_sample.csv`
+- `outputs/cleanned/cleaned_drugsComTrain.csv`
+- `outputs/tables/predictions_drugsComTrain.csv`
+- `outputs/cleanned/cleaned_drugsComTest.csv`
+- `outputs/tables/predictions_drugsComTest.csv`
 
 Due to GitHub file size limits, the full dataset and full prediction files are kept locally and are not included in this repository.
 
