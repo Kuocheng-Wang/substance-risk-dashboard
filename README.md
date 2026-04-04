@@ -1,6 +1,6 @@
-# Substance Abuse Risk Dashboard
+# Substance Risk Dashboard
 
-This project was developed for **UMKC NSF NRT Challenge 1 (AI)** and focuses on building an end-to-end dashboard for **substance abuse risk detection, temporal trend analysis, and interpretable decision-support insights**.
+This project was developed for **UMKC NSF NRT Challenge 1 (AI)** and focuses on building an end-to-end dashboard for **substance risk detection, temporal trend analysis, and interpretable decision-support insights**.
 
 ## Team Members
 - Yuchen Zhang
